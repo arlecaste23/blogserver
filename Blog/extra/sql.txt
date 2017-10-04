@@ -1,0 +1,1 @@
+create table login(id int not null auto_increment, client_id int not null, islogged varchar(6) not null, constraint client_constraint foreign key(client_id) references users(id), primary key(id, client_id));
